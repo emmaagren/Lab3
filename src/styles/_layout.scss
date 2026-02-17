@@ -1,5 +1,9 @@
+
+@use 'base' as b;
+@use 'sass:color';
+
 header {
-    background: $primary;
+    background: b.$primary;
     padding: 1rem;
 }
 
@@ -13,5 +17,5 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    background: lighten($primary, 15%);
+    background: color.adjust(b.$primary, $lightness: 15%);
 }

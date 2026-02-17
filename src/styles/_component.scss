@@ -1,10 +1,14 @@
+
+@use 'base' as b;
+@use 'sass:color';
+
 //////////NAVIGATION///////////
 
 nav {
 
     ul {
         list-style: none;
-        @include flex-center;
+        @include b.flex-center;
         gap: 2rem;
 
         li {
@@ -15,13 +19,13 @@ nav {
                 font-weight: bold;
 
                 &:hover {
-                    color: darken(white, 20%);
+                    color: color.adjust(white, $lightness: -20%);
                 }
             }
         }
 
         //Responsiv meny
-        @include mobile {
+        @include b.mobile {
             ul {
                 flex-direction: column;
             }
@@ -44,5 +48,5 @@ nav {
 
 .highlight {
     @extend .card;
-    border-left: 5px solid $secondary;
+    border-left: 5px solid b.$secondary;
 }
