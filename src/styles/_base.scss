@@ -1,4 +1,32 @@
+///////VARIABLER////////
 
-//Tema-färgvariabler.
+//Ljust tema.
 $light-bg: #f4f7fa;
 $light-text: #222;
+
+//Mörkt tema.
+$dark-bg: #1e1e1e;
+$dark-text: #f4f4f4;
+
+//Accentfärger.
+$primary: #3498db;
+$secondary: #e67e22;
+
+//Standardtema.
+$default-theme: light;
+
+/////MIXINS////
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+
