@@ -18,7 +18,7 @@ nav {
                 font-weight: bold;
 
                 &:hover {
-                    color: color.adjust(white, $lightness: -20%);
+                    color: darken(white, 20%);
                 }
             }
         }
@@ -57,6 +57,7 @@ nav {
 .image-stack__item {
     overflow: hidden;
     border-radius: 12px;
+    border: 2px solid lighten(b.$primary, 40%);
 }
 
 img {
