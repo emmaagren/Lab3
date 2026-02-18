@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-export default fefineConfig({
+export default defineConfig({
     build: {
         rollupOptions: {
             input: {
